@@ -17,7 +17,10 @@ public class GhostNavAgent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.destination = playerTransform.position;
+        if (playerTransform != null)
+        {
+            agent.destination = playerTransform.position;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
