@@ -9,6 +9,9 @@ public class ThirdPersonMovement : MonoBehaviour
     public float speed = 6f;
     public float turnSmoothTime = 0.1f;
     float turnSmoothvelocity;
+    public bool HasPowerUp = false;
+
+  //  public bool HasPowerUp { get; internal set; }
 
     void Update()
     {
@@ -26,4 +29,21 @@ public class ThirdPersonMovement : MonoBehaviour
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
     }
+
+    
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Cherry"))
+        {
+            Destroy(other.gameObject);
+            HasPowerUp = true;
+        }
+
+        if(other.CompareTag("Ghost") && HasPowerUp)
+        {
+            Destroy(other.gameObject);
+        }
+    }
+
+    
 }

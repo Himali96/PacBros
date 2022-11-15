@@ -3341,6 +3341,7 @@ MonoBehaviour:
   cam: {fileID: 1779443173}
   speed: 6
   turnSmoothTime: 0.1
+  HasPowerUp: 0
 --- !u!143 &254736243
 CharacterController:
   m_ObjectHideFlags: 0
@@ -7055,6 +7056,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a3881a203fba84c8dcc9ae63abfd82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &698439245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3251690325731265376, guid: 8dadb4a5d9de8a941b6bb68d601ad73f, type: 3}
+  m_PrefabInstance: {fileID: 3251690327539065352}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &698439249
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698439245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8019543, y: 1.588679, z: 0.8791236}
+  m_Center: {x: -0.075080745, y: 0.7943395, z: 0.10694081}
 --- !u!1001 &711246572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7350,6 +7369,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2095465457}
     m_Modifications:
+    - target: {fileID: -2918360302158951732, guid: 60c2480153d4da841ab193c749b9e87c, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 254736241}
     - target: {fileID: 1484215935964939704, guid: 60c2480153d4da841ab193c749b9e87c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -7398,6 +7421,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost_Red Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1484215935965174168, guid: 60c2480153d4da841ab193c749b9e87c, type: 3}
+      propertyPath: m_TagString
+      value: Ghost
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c2480153d4da841ab193c749b9e87c, type: 3}
 --- !u!4 &755502780 stripped
@@ -7405,6 +7432,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1484215935964939704, guid: 60c2480153d4da841ab193c749b9e87c, type: 3}
   m_PrefabInstance: {fileID: 755502779}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &759482460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 759482461}
+  m_Layer: 0
+  m_Name: EnemySpawnPoint
+  m_TagString: EnemySpawnPoint
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &759482461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759482460}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.27, y: 0.996, z: -0.881}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1065478695}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &762004626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11505,7 +11563,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1232955820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16583,7 +16641,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779443172}
   m_LocalRotation: {x: 0.53729963, y: -0, z: -0, w: 0.8433915}
-  m_LocalPosition: {x: 0, y: 10, z: -10}
+  m_LocalPosition: {x: 0, y: 23, z: -12.1}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16648,7 +16706,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779443172}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54f58ad0d23ad8047adf3c42447f58bf, type: 3}
   m_Name: 
@@ -19406,6 +19464,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2095465457}
     m_Modifications:
+    - target: {fileID: -8822061138104399223, guid: f4c0092c8046f484a80394f3f076d9d7, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 254736241}
     - target: {fileID: 722881024703374693, guid: f4c0092c8046f484a80394f3f076d9d7, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -19454,6 +19516,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost_Pink
       objectReference: {fileID: 0}
+    - target: {fileID: 722881024703805765, guid: f4c0092c8046f484a80394f3f076d9d7, type: 3}
+      propertyPath: m_TagString
+      value: Ghost
+      objectReference: {fileID: 0}
     - target: {fileID: 722881024706982981, guid: f4c0092c8046f484a80394f3f076d9d7, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -19482,6 +19548,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3251690325731265376, guid: 8dadb4a5d9de8a941b6bb68d601ad73f, type: 3}
       propertyPath: m_Name
+      value: Cherry
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251690325731265376, guid: 8dadb4a5d9de8a941b6bb68d601ad73f, type: 3}
+      propertyPath: m_TagString
       value: Cherry
       objectReference: {fileID: 0}
     - target: {fileID: 3251690325731628864, guid: 8dadb4a5d9de8a941b6bb68d601ad73f, type: 3}
@@ -19537,9 +19607,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2095465457}
     m_Modifications:
+    - target: {fileID: 1693681202765402821, guid: 41f5bb0172a94a4459eee9900b6bf02c, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 254736241}
     - target: {fileID: 6706788707963437449, guid: 41f5bb0172a94a4459eee9900b6bf02c, type: 3}
       propertyPath: m_Name
       value: Ghost_LitBlue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6706788707963437449, guid: 41f5bb0172a94a4459eee9900b6bf02c, type: 3}
+      propertyPath: m_TagString
+      value: Ghost
       objectReference: {fileID: 0}
     - target: {fileID: 6706788707963542953, guid: 41f5bb0172a94a4459eee9900b6bf02c, type: 3}
       propertyPath: m_RootOrder
@@ -19598,6 +19676,10 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3586683522879881825, guid: bbf054d6e436c51468be981115a84991, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 254736241}
     - target: {fileID: 9163715946089635206, guid: bbf054d6e436c51468be981115a84991, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -19645,6 +19727,10 @@ PrefabInstance:
     - target: {fileID: 9163715946089988518, guid: bbf054d6e436c51468be981115a84991, type: 3}
       propertyPath: m_Name
       value: Ghost_Orange
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163715946089988518, guid: bbf054d6e436c51468be981115a84991, type: 3}
+      propertyPath: m_TagString
+      value: Ghost
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbf054d6e436c51468be981115a84991, type: 3}
