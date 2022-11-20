@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
     [SerializeField] int foodItems;
 
     [System.NonSerialized] public Dictionary<int, Transform> playersTransform = new Dictionary<int, Transform>();
+    [System.NonSerialized] public Dictionary<int, int> playerFoodEaten = new Dictionary<int, int>();
     int nextIdPlayerToFollow = -1;
 
     public static GameManager _instance;
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
             _instance = this;
     }
 
-    public int Food
+    public int Food // This is local player score
     {
         get
         {
@@ -41,6 +42,11 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
                 foodItems = 0;
             foodItemTxt.SetText("Score: " +foodItems.ToString());
         }
+    }
+
+    public void PlayeEatFood(PhotonView playerPv)
+    {
+        playerFoodEaten[playerPv.OwnerActorNr]++;
     }
 
     public void PlayerDie(PhotonView playerPv)
@@ -72,6 +78,7 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
     public void NewPlayerConnected(PhotonView pv)
     {
         playersTransform.Add(pv.OwnerActorNr, pv.transform);
+        playerFoodEaten.Add(pv.OwnerActorNr, 0);
         OnPlayerListChange?.Invoke();
     }
 
@@ -84,6 +91,7 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
         if (playersTransform.ContainsKey(otherPlayer.ActorNumber))
         {
             playersTransform.Remove(otherPlayer.ActorNumber);
+            playerFoodEaten.Remove(otherPlayer.ActorNumber);
             OnPlayerListChange?.Invoke();
         }
     }
