@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -15,16 +16,23 @@ public class GhostNavAgent : MonoBehaviour
     void Start()
     {
         spawnPoint = GameObject.FindGameObjectWithTag("EnemySpawnPoint");
+
+        GameManager._instance.OnPlayerListChange += OnPlayerListChange;
+    }
+
+    void OnDestroy()
+    {
+        if(GameManager._instance)
+            GameManager._instance.OnPlayerListChange -= OnPlayerListChange;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!PhotonNetwork.IsMasterClient) return;
+        if (playerTransform == null) return;
         
-        playerTransform = FindObjectOfType<ThirdPersonMovement>().gameObject.transform;
-        goPlayer = playerTransform.gameObject;
-        playerPowerUp = goPlayer.GetComponent<ThirdPersonMovement>().HasPowerUp;
-
+        playerPowerUp = goPlayer.GetComponent<ThirdPersonMovement>().HasPowerUp; // This can be improved
 
         if (playerPowerUp && Vector3.Distance(transform.position, playerTransform.position) <= CloseEnoughDistance)
         {
@@ -32,18 +40,27 @@ public class GhostNavAgent : MonoBehaviour
         }
         else
         {
-            if (playerTransform != null)
-            {
-                agent.destination = playerTransform.position;
-            }
+            agent.destination = playerTransform.position;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!PhotonNetwork.IsMasterClient) return;
+
         if(other.gameObject.CompareTag("Player") && playerPowerUp == false)
         {
-            Destroy(other.gameObject);
+            PhotonNetwork.Destroy(other.gameObject);
+            GameManager._instance.PlayerDie(other.GetComponent<PhotonView>());
+        }
+    }
+
+    void OnPlayerListChange()
+    {
+        playerTransform = GameManager._instance.GetPlayerToFollow();
+        if(playerTransform)
+        {
+            goPlayer = playerTransform.gameObject;
         }
     }
 }

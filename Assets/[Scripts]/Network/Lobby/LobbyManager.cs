@@ -92,7 +92,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public void PlayAlone()
     {
-        PhotonNetwork.OfflineMode = true;
+        //PhotonNetwork.OfflineMode = true;
         PhotonNetwork.LoadLevel(gameScene);
     }
 

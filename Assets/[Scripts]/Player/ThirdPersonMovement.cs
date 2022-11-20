@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class ThirdPersonMovement : MonoBehaviour
     public float turnSmoothTime = 0.1f;
     float turnSmoothvelocity;
     public bool HasPowerUp = false;
+
+    [SerializeField]
+    PhotonView pv;
 
   //  public bool HasPowerUp { get; internal set; }
 
@@ -33,15 +37,17 @@ public class ThirdPersonMovement : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
+        if (!PhotonNetwork.IsMasterClient) return; // Only master
+
         if(other.CompareTag("Cherry"))
         {
-            Destroy(other.gameObject);
+            PhotonNetwork.Destroy(other.gameObject);
             HasPowerUp = true;
         }
 
         if(other.CompareTag("Ghost") && HasPowerUp)
         {
-            Destroy(other.gameObject);
+            PhotonNetwork.Destroy(other.gameObject);
         }
     }
 
