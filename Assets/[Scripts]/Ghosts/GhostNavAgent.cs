@@ -46,19 +46,23 @@ public class GhostNavAgent : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!PhotonNetwork.IsMasterClient) return;
-
         if(other.gameObject.CompareTag("Player") && playerPowerUp == false)
         {
-            PhotonNetwork.Destroy(other.gameObject);
-            GameManager._instance.PlayerDie(other.GetComponent<PhotonView>());
+            PhotonView otherPv = other.GetComponent<PhotonView>();
+            GameManager._instance.PlayerDie(otherPv);
+
+            if (otherPv.AmOwner) // Only the controller of player can kill it
+            {
+                PhotonNetwork.Destroy(other.gameObject);
+            }
         }
     }
 
     void OnPlayerListChange()
     {
         playerTransform = GameManager._instance.GetPlayerToFollow();
-        if(playerTransform)
+
+        if (playerTransform)
         {
             goPlayer = playerTransform.gameObject;
         }

@@ -102,7 +102,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster()
     {
-        PhotonNetwork.AutomaticallySyncScene = false;
+        PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.NickName = $"PacBro-{Random.Range(1, 100000)}";
         roomCreateInput.text = $"Room-{PhotonNetwork.NickName}";
 
