@@ -40,6 +40,11 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         }
     }
 
+    public void JoinRandomRoom()
+    {
+        PhotonNetwork.JoinRandomRoom();
+    }
+
     public override void OnJoinedLobby()
     {
         print("Joined Lobby Server");
@@ -96,8 +101,11 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         PhotonNetwork.LoadLevel(gameScene);
     }
 
-    void RequestRefreshList()
+    public override void OnJoinRandomFailed(short returnCode, string message)
     {
+        base.OnJoinRandomFailed(returnCode, message);
+
+        CreateRoom();
     }
 
     public override void OnConnectedToMaster()
