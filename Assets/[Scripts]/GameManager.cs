@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
             foodItems = value;
             if (foodItems < 0)
                 foodItems = 0;
-            foodItemTxt.SetText("Score: " +foodItems.ToString());
+            foodItemTxt.SetText(foodItems.ToString());
         }
     }
 

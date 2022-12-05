@@ -9,6 +9,4 @@ public class PlayerSpawn : MonoBehaviour
     {
         PhotonNetwork.Instantiate("Player", transform.position, Quaternion.identity);
     }
-
-
 }
