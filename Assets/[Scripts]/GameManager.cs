@@ -6,6 +6,7 @@ using UnityEngine;
 using TMPro;
 using Photon.Pun;
 using Photon.Realtime;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour, IInRoomCallbacks
@@ -71,6 +72,7 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
         }
 
         Time.timeScale = 0f;
+        gameOverPopup.SetActive(true);
     }
 
     public Transform GetPlayerToFollow()
@@ -117,4 +119,21 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
     public void OnMasterClientSwitched(Player newMasterClient)
     {
     }
+    
+    /*void SyncLocalScore(int newScore)
+    {
+        Hashtable score = new Hashtable();
+        score["score"] = newScore;
+        PhotonNetwork.LocalPlayer.SetCustomProperties(score);
+    }
+    
+    int GetScoreOfPlayer(Player player)
+    {
+        if (player.CustomProperties.TryGetValue("score", out object score))
+        {
+            return (int)score;
+        }
+
+        return 0;
+    }*/
 }

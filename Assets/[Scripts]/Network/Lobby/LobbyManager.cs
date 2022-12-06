@@ -23,6 +23,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     [SerializeField] GameObject waitingRoomGo = null;
     [SerializeField] string gameScene = "";
 
+    [Header("Join Fast")] 
+    [SerializeField] Button jointFastBtn = null;
+
     int numPlayers = 0;
 
     void Start()
@@ -68,6 +71,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         {
             waitingRoomGo.SetActive(true);
             roomCreateBtn.interactable = false;
+            jointFastBtn.interactable = false;
         }
         else
         {
@@ -93,6 +97,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         PhotonNetwork.LeaveRoom();
         waitingRoomGo.SetActive(false);
         roomCreateBtn.interactable = true;
+        jointFastBtn.interactable = true;
     }
 
     public void PlayAlone()
@@ -121,6 +126,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         print("Create Room Failed: " + codeAndMessage[1]);
         roomCreateBtn.interactable = true;
+        jointFastBtn.interactable = true;
         waitingRoomGo.SetActive(false);
     }
 
@@ -148,6 +154,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         base.OnCreateRoomFailed(returnCode, message);
         print("Create Room Failed: " + returnCode + " - " + message);
         roomCreateBtn.interactable = true;
+        jointFastBtn.interactable = true;
         waitingRoomGo.SetActive(false);
     }
 
