@@ -6,14 +6,17 @@ using UnityEngine;
 using TMPro;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour, IInRoomCallbacks
 {
     public Action OnPlayerListChange;
 
-    [SerializeField] TextMeshProUGUI foodItemTxt = null;
-
+    [SerializeField] Text foodItemTxt = null;
     [SerializeField] int foodItems;
+
+    [SerializeField] TextMeshProUGUI finalScoreTxt = null;
+    [SerializeField] GameObject gameOverPopup;
 
     [System.NonSerialized] public Dictionary<int, Transform> playersTransform = new Dictionary<int, Transform>();
     [System.NonSerialized] public Dictionary<int, int> playerFoodEaten = new Dictionary<int, int>();
@@ -40,7 +43,14 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
             foodItems = value;
             if (foodItems < 0)
                 foodItems = 0;
-            foodItemTxt.SetText(foodItems.ToString());
+            /*
+            if (foodItems >= 150) //only for 1 player
+            {
+                gameOverPopup.SetActive(true);
+                finalScoreTxt.text = "Your Final Score: " + foodItems.ToString();
+            }
+            */
+            foodItemTxt.text = "Score: " + foodItems.ToString();
         }
     }
 

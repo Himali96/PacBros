@@ -135,6 +135,10 @@ PrefabInstance:
       value: Dot
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -251,6 +255,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -417,6 +425,46 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4615947513827348, guid: 560c09726e6bc4f41ae8ae1dd678d632, type: 3}
   m_PrefabInstance: {fileID: 12981829}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &14048121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 14048122}
+  m_Layer: 5
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &14048122
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14048121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 126294868}
+  - {fileID: 250482267}
+  - {fileID: 771504181}
+  - {fileID: 1933287053}
+  m_Father: {fileID: 1232955823}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 15, y: 125}
+  m_SizeDelta: {x: 1230, y: 450}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &14819687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -427,6 +475,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -547,6 +599,10 @@ PrefabInstance:
       value: Dot (54)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -663,6 +719,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (96)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -899,6 +959,10 @@ PrefabInstance:
       value: Dot (10)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -1015,6 +1079,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -1135,6 +1203,10 @@ PrefabInstance:
       value: Dot (21)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -1253,6 +1325,10 @@ PrefabInstance:
       value: Dot (106)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -1369,6 +1445,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -1521,6 +1601,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -1819,6 +1903,10 @@ PrefabInstance:
       value: Dot (60)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -1967,7 +2055,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &113500110
 GameObject:
@@ -1994,18 +2082,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113500110}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1232955823}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 92}
+  m_SizeDelta: {x: 0, y: -552.44006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &113500112
 MonoBehaviour:
@@ -2110,7 +2198,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &126294867
 GameObject:
@@ -2129,7 +2217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &126294868
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2137,17 +2225,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126294867}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1232955823}
-  m_RootOrder: 1
+  m_Father: {fileID: 14048122}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -500, y: 300}
+  m_AnchoredPosition: {x: -515, y: 175}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &126294869
@@ -2257,6 +2345,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -2375,6 +2467,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -2589,6 +2685,10 @@ PrefabInstance:
       value: Dot (44)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -2705,6 +2805,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (125)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -2857,6 +2961,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -3039,6 +3147,10 @@ PrefabInstance:
       value: Dot (102)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -3157,6 +3269,10 @@ PrefabInstance:
       value: Dot (119)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -3273,6 +3389,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (127)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -3453,6 +3573,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (123)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -3636,7 +3760,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &250482267
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3644,17 +3768,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250482266}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1232955823}
-  m_RootOrder: 2
+  m_Father: {fileID: 14048122}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 580, y: 300}
+  m_AnchoredPosition: {x: 565, y: 175}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &250482268
@@ -3710,6 +3834,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -4047,6 +4175,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266414304}
   m_CullTransparentMesh: 1
+--- !u!1 &266834546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 266834547}
+  - component: {fileID: 266834549}
+  - component: {fileID: 266834548}
+  m_Layer: 5
+  m_Name: Logo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &266834547
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266834546}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1159615568}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.10024945, y: 0.65000004}
+  m_AnchorMax: {x: 0.8996788, y: 0.89166903}
+  m_AnchoredPosition: {x: 0.00009918213, y: -53.9942}
+  m_SizeDelta: {x: 1627.2826, y: 266.199}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &266834548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266834546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 2bfbc2df09b485047bf0ec1eef56bbb6, type: 3}
+    m_FontSize: 225
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 285
+    m_Alignment: 4
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: MAin Menu
+--- !u!222 &266834549
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266834546}
+  m_CullTransparentMesh: 0
 --- !u!1001 &316174255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4057,6 +4265,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -4177,6 +4389,10 @@ PrefabInstance:
       value: Dot (65)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -4293,6 +4509,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (129)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -4413,6 +4633,10 @@ PrefabInstance:
       value: Dot (143)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -4529,6 +4753,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -4649,6 +4877,10 @@ PrefabInstance:
       value: Dot (147)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -4765,6 +4997,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -4885,6 +5121,10 @@ PrefabInstance:
       value: Dot (131)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -5001,6 +5241,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (120)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -5121,6 +5365,10 @@ PrefabInstance:
       value: Dot (88)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -5237,6 +5485,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -5473,6 +5725,10 @@ PrefabInstance:
       value: Dot (26)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -5589,6 +5845,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -5709,6 +5969,10 @@ PrefabInstance:
       value: Dot (146)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -5825,6 +6089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 462168347}
   - component: {fileID: 462168348}
+  - component: {fileID: 462168349}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -5845,7 +6110,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &462168348
 MonoBehaviour:
@@ -5859,8 +6124,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be9aeb07c04d8574187a34cedd617ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodItemTxt: {fileID: 266414306}
+  foodItemTxt: {fileID: 1777261287}
+  finalScoreTxt: {fileID: 1754458551}
   foodItems: 0
+  gameOverPopup: {fileID: 1232955819}
+--- !u!114 &462168349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462168346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23d913b87a54c4544a5bc103a4962f56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &465481486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5871,6 +6150,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -5991,6 +6274,10 @@ PrefabInstance:
       value: Dot (122)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -6107,6 +6394,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (116)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -6227,6 +6518,10 @@ PrefabInstance:
       value: Dot (34)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -6345,6 +6640,10 @@ PrefabInstance:
       value: Dot (104)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -6461,6 +6760,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -6635,6 +6938,10 @@ PrefabInstance:
       value: Dot (81)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -6751,6 +7058,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -6929,6 +7240,10 @@ PrefabInstance:
       value: Dot (97)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -7045,6 +7360,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -7258,6 +7577,10 @@ PrefabInstance:
       value: Dot (37)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -7374,6 +7697,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -7494,6 +7821,10 @@ PrefabInstance:
       value: Dot (61)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -7610,6 +7941,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (114)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -7791,7 +8126,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &622978748
 PrefabInstance:
@@ -7803,6 +8138,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -7923,6 +8262,10 @@ PrefabInstance:
       value: Dot (108)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -8039,6 +8382,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -8197,7 +8544,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &660084158
 Transform:
   m_ObjectHideFlags: 0
@@ -8224,6 +8571,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (141)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -8342,6 +8693,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (137)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -8502,6 +8857,10 @@ PrefabInstance:
       value: Dot (149)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -8618,6 +8977,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (89)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -8738,6 +9101,10 @@ PrefabInstance:
       value: Dot (3)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -8851,6 +9218,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2095465457}
     m_Modifications:
+    - target: {fileID: -6044173646473748513, guid: 60c2480153d4da841ab193c749b9e87c, type: 3}
+      propertyPath: m_Speed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -2918360302158951732, guid: 60c2480153d4da841ab193c749b9e87c, type: 3}
       propertyPath: playerTransform
       value: 
@@ -9001,6 +9372,10 @@ PrefabInstance:
       value: Dot (32)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -9117,6 +9492,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -9242,7 +9621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &771504181
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9250,17 +9629,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771504180}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1232955823}
-  m_RootOrder: 3
+  m_Father: {fileID: 14048122}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 510, y: 300}
+  m_AnchoredPosition: {x: 495, y: 175}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &771504182
@@ -9311,6 +9690,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (117)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -9483,6 +9866,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -9711,6 +10098,10 @@ PrefabInstance:
       value: Dot (64)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -9883,6 +10274,10 @@ PrefabInstance:
       value: Dot (45)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -9999,6 +10394,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -10119,6 +10518,10 @@ PrefabInstance:
       value: Dot (121)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -10235,6 +10638,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -10355,6 +10762,10 @@ PrefabInstance:
       value: Dot (43)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -10471,6 +10882,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -10591,6 +11006,10 @@ PrefabInstance:
       value: Dot (138)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -10707,6 +11126,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (103)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -10827,6 +11250,10 @@ PrefabInstance:
       value: Dot (136)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -10942,7 +11369,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6445064713600991296, guid: bc8f6df4e3a2c7946a0d74759062d1ea, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6445064713600991296, guid: bc8f6df4e3a2c7946a0d74759062d1ea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11000,6 +11427,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -11120,6 +11551,10 @@ PrefabInstance:
       value: Dot (4)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -11236,6 +11671,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (139)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -11429,6 +11868,10 @@ PrefabInstance:
       value: Dot (111)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -11545,6 +11988,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -11846,6 +12293,10 @@ PrefabInstance:
       value: Dot (57)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -11962,6 +12413,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (135)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -12082,6 +12537,10 @@ PrefabInstance:
       value: Dot (15)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -12188,6 +12647,83 @@ MonoBehaviour:
   sceneViewId: 71
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!1 &1051082202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1051082203}
+  - component: {fileID: 1051082206}
+  - component: {fileID: 1051082205}
+  m_Layer: 5
+  m_Name: Score Board
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1051082203
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051082202}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.78598, y: 1.78598, z: 1.78598}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1777261286}
+  m_Father: {fileID: 1439722006}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1722, y: -83}
+  m_SizeDelta: {x: 50, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1051082205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051082202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1869882300962442916, guid: b1e90a4cefc1f2a409ac727d50028c54, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1051082206
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051082202}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1062715961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12198,6 +12734,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -12372,6 +12912,10 @@ PrefabInstance:
       value: Dot (85)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -12490,6 +13034,10 @@ PrefabInstance:
       value: Dot (105)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -12606,6 +13154,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (109)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -12780,6 +13332,10 @@ PrefabInstance:
       value: Dot (134)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -12896,6 +13452,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -13165,6 +13725,10 @@ PrefabInstance:
       value: Dot (38)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -13271,6 +13835,140 @@ MonoBehaviour:
   sceneViewId: 64
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!1 &1159615567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1159615568}
+  - component: {fileID: 1159615571}
+  - component: {fileID: 1159615570}
+  - component: {fileID: 1159615569}
+  m_Layer: 5
+  m_Name: Btn Main Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1159615568
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159615567}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.78598, y: 1.78598, z: 1.78598}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 266834547}
+  m_Father: {fileID: 1439722006}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -234, y: -83}
+  m_SizeDelta: {x: 50, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1159615569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159615567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
+    m_PressedColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1159615570}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 462168349}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: LoadMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MainLobby
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1159615570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159615567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1869882300962442916, guid: b1e90a4cefc1f2a409ac727d50028c54, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1159615571
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159615567}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1160391119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13281,6 +13979,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (101)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -13401,6 +14103,10 @@ PrefabInstance:
       value: Dot (140)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -13517,6 +14223,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (126)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -13650,7 +14360,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192577895}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13765,6 +14475,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (82)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -14020,14 +14734,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1192577896}
-  - {fileID: 126294868}
-  - {fileID: 250482267}
-  - {fileID: 771504181}
-  - {fileID: 1933287053}
   - {fileID: 113500111}
   - {fileID: 1754458550}
+  - {fileID: 14048122}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -14044,6 +14755,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -14162,6 +14877,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -14500,6 +15219,10 @@ PrefabInstance:
       value: Dot (133)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -14616,6 +15339,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -14736,6 +15463,10 @@ PrefabInstance:
       value: Dot (13)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -14852,6 +15583,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (93)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -14972,6 +15707,10 @@ PrefabInstance:
       value: Dot (113)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -15090,6 +15829,10 @@ PrefabInstance:
       value: Dot (17)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -15206,6 +15949,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -15363,7 +16110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4862686744474243973, guid: a91f02a51125dc94fbc89ca6877dc37f, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4862686744474243973, guid: a91f02a51125dc94fbc89ca6877dc37f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15491,6 +16238,10 @@ PrefabInstance:
       value: Dot (12)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -15607,6 +16358,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -15781,6 +16536,10 @@ PrefabInstance:
       value: Dot (80)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -15941,6 +16700,10 @@ PrefabInstance:
       value: Dot (115)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -16057,6 +16820,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -16182,7 +16949,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1398931071
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16453,8 +17220,10 @@ RectTransform:
   - {fileID: 954939367}
   - {fileID: 1398931071}
   - {fileID: 266414305}
+  - {fileID: 1159615568}
+  - {fileID: 1051082203}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -16585,6 +17354,10 @@ PrefabInstance:
       value: Dot (19)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -16701,6 +17474,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (144)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -16821,6 +17598,10 @@ PrefabInstance:
       value: Dot (90)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -16939,6 +17720,10 @@ PrefabInstance:
       value: Dot (142)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -17055,6 +17840,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -17229,6 +18018,10 @@ PrefabInstance:
       value: Dot (24)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -17345,6 +18138,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -17465,6 +18262,10 @@ PrefabInstance:
       value: Dot (110)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -17581,6 +18382,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (94)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -17809,6 +18614,10 @@ PrefabInstance:
       value: Dot (28)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -17925,6 +18734,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -18110,6 +18923,10 @@ PrefabInstance:
       value: Dot (91)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -18226,6 +19043,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -18603,6 +19424,10 @@ PrefabInstance:
       value: Dot (98)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -18719,6 +19544,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (118)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -18839,6 +19668,10 @@ PrefabInstance:
       value: Dot (95)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -18955,6 +19788,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -19133,6 +19970,10 @@ PrefabInstance:
       value: Dot (124)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -19249,6 +20090,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -19369,6 +20214,10 @@ PrefabInstance:
       value: Dot (8)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -19487,6 +20336,10 @@ PrefabInstance:
       value: Dot (99)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -19603,6 +20456,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (145)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -19736,18 +20593,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754458549}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1232955823}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 200}
+  m_AnchoredPosition: {x: 0, y: 55.869995}
+  m_SizeDelta: {x: 1187.31, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1754458551
 MonoBehaviour:
@@ -19769,7 +20626,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Over!
+  m_text: 'Your Final Score: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -19856,6 +20713,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -19976,6 +20837,10 @@ PrefabInstance:
       value: Dot (48)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -20082,6 +20947,86 @@ MonoBehaviour:
   sceneViewId: 22
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!1 &1777261285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1777261286}
+  - component: {fileID: 1777261288}
+  - component: {fileID: 1777261287}
+  m_Layer: 5
+  m_Name: Logo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1777261286
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777261285}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1051082203}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_AnchorMin: {x: 0.10024945, y: 0.65000004}
+  m_AnchorMax: {x: 0.8996788, y: 0.89166903}
+  m_AnchoredPosition: {x: 0.00009918213, y: -53.9942}
+  m_SizeDelta: {x: 1627.2826, y: 266.199}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1777261287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777261285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 2bfbc2df09b485047bf0ec1eef56bbb6, type: 3}
+    m_FontSize: 225
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 285
+    m_Alignment: 4
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Score: 0'
+--- !u!222 &1777261288
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777261285}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1790731715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20092,6 +21037,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -20212,6 +21161,10 @@ PrefabInstance:
       value: Dot (35)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -20328,6 +21281,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -20451,6 +21408,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -20665,6 +21626,10 @@ PrefabInstance:
       value: Dot (29)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -20817,6 +21782,10 @@ PrefabInstance:
       value: Dot (9)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -20933,6 +21902,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -21053,6 +22026,10 @@ PrefabInstance:
       value: Dot (59)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -21171,6 +22148,10 @@ PrefabInstance:
       value: Dot (92)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -21287,6 +22268,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -21412,7 +22397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1933287053
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21420,17 +22405,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933287052}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1232955823}
-  m_RootOrder: 4
+  m_Father: {fileID: 14048122}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 440, y: 300}
+  m_AnchoredPosition: {x: 425, y: 175}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1933287054
@@ -21481,6 +22466,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (100)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -21713,6 +22702,10 @@ PrefabInstance:
       value: Dot (148)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -21831,6 +22824,10 @@ PrefabInstance:
       value: Dot (25)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -21947,6 +22944,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (107)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -22320,6 +23321,10 @@ PrefabInstance:
       value: Dot (49)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -22436,6 +23441,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -22556,6 +23565,10 @@ PrefabInstance:
       value: Dot (132)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -22672,6 +23685,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (128)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -22881,6 +23898,10 @@ PrefabInstance:
       value: Dot (130)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -22999,6 +24020,10 @@ PrefabInstance:
       value: Dot (87)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -23115,6 +24140,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_Name
       value: Dot (112)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: dfa846214fe98954ca47d9a694a75cf4, type: 3}
       propertyPath: m_TagString
@@ -23361,6 +24390,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1761698037790283355, guid: f4c0092c8046f484a80394f3f076d9d7, type: 3}
+      propertyPath: m_Speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761698037790283355, guid: f4c0092c8046f484a80394f3f076d9d7, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -23491,6 +24524,10 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4261852928425950781, guid: 41f5bb0172a94a4459eee9900b6bf02c, type: 3}
+      propertyPath: m_Speed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6706788707963437449, guid: 41f5bb0172a94a4459eee9900b6bf02c, type: 3}
       propertyPath: m_Name
       value: Ghost_LitBlue
@@ -23598,7 +24635,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -3947031178965253074, guid: bbf054d6e436c51468be981115a84991, type: 3}
       propertyPath: m_Speed
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3586683522879881825, guid: bbf054d6e436c51468be981115a84991, type: 3}
       propertyPath: playerTransform
