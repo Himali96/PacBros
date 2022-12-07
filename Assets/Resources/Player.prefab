@@ -156,6 +156,8 @@ MonoBehaviour:
   speed: 6
   turnSmoothTime: 0.1
   HasPowerUp: 0
+  _gameObject: {fileID: 4745919542885641625, guid: ffa7953b50f0cca4a8fa59c8d956a318, type: 3}
+  powerTime: 0
   pv: {fileID: 5185499022384929029}
 --- !u!114 &502468785395806297
 MonoBehaviour:

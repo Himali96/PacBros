@@ -8,6 +8,8 @@ TagManager:
   - Cherry
   - Ghost
   - EnemySpawnPoint
+  - PowerUp
+  - CherryImage
   layers:
   - Default
   - TransparentFX
