@@ -12,7 +12,8 @@ public class ThirdPersonMovement : MonoBehaviour
     float turnSmoothvelocity;
     public bool HasPowerUp = false;
     public GameObject _gameObject;
-    public float powerTime = 0.0f;
+    public float powerUpTimer;
+   
 
 
     [SerializeField]
@@ -34,16 +35,20 @@ public class ThirdPersonMovement : MonoBehaviour
         Vector3 direction = new Vector3 (horizontal, 0f, vertical).normalized;
         _gameObject = GameObject.FindGameObjectWithTag("CherryImage");
 
-        powerTime -= Time.deltaTime;
+        // Check timer only when Power up time
+        if (HasPowerUp)
+        {
+            // Countdown the timer with update time
+            powerUpTimer -= Time.deltaTime;
+            Debug.Log("PowerUp");
 
-        if (powerTime > 0.0f && !HasPowerUp)
-        {
-            HasPowerUp = true;
-          
-        }
-        else if (HasPowerUp)
-        {
-            HasPowerUp = false;
+            if (powerUpTimer <= 0)
+            {
+                // End of power up time 
+                HasPowerUp = false;
+                powerUpTimer = 0;
+                Debug.Log("PowerDown");
+            }
         }
 
         if (direction.magnitude >= 0.1f)
@@ -57,18 +62,24 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 
-    
+    // Add any time player picks to timer
+    public void OnPickPowerUp(float buffTime)
+    {
+        HasPowerUp = true;
+        powerUpTimer += buffTime;
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (!PhotonNetwork.IsMasterClient) return; // Only master
 
-        if(other.CompareTag("Cherry"))
-        {
-            PhotonNetwork.Destroy(other.gameObject);
-            _gameObject.SetActive(true);
+        //if(other.CompareTag("Cherry"))
+        //{
+         //   PhotonNetwork.Destroy(other.gameObject);
+         //   _gameObject.SetActive(true);
             
-        }
-
+    //    }
+    
         if(other.CompareTag("Ghost") && HasPowerUp)
         {
             other.GetComponent<GhostNavAgent>().Kill();
@@ -77,7 +88,7 @@ public class ThirdPersonMovement : MonoBehaviour
         if (other.CompareTag("PowerUp"))
         {
             PhotonNetwork.Destroy(other.gameObject);
-            HasPowerUp = true;
+            OnPickPowerUp(4f);
         }
     }
 
