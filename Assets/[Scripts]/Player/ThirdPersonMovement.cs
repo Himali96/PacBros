@@ -71,7 +71,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
         if(other.CompareTag("Ghost") && HasPowerUp)
         {
-            PhotonNetwork.Destroy(other.gameObject);
+            other.GetComponent<GhostNavAgent>().Kill();
         }
 
         if (other.CompareTag("PowerUp"))

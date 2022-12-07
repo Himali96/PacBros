@@ -6,15 +6,24 @@ using UnityEngine.AI;
 
 public class GhostNavAgent : MonoBehaviour
 {
+    const float kTimeOfDeath = 5f;
+    
     public Transform playerTransform;
     public NavMeshAgent agent;
     GameObject goPlayer,spawnPoint;
     bool playerPowerUp;
     public float CloseEnoughDistance = 5f;
 
+    Vector3 startPosition;
+    bool isDeath;
+
+    PhotonView pv;
+
     // Start is called before the first frame update
     void Start()
     {
+        pv = GetComponent<PhotonView>();
+        startPosition = transform.position;
         spawnPoint = GameObject.FindGameObjectWithTag("EnemySpawnPoint");
 
         GameManager._instance.OnPlayerListChange += OnPlayerListChange;
@@ -31,6 +40,7 @@ public class GhostNavAgent : MonoBehaviour
     {
         if (!PhotonNetwork.IsMasterClient) return;
         if (playerTransform == null) return;
+        if (isDeath) return;
         
         playerPowerUp = goPlayer.GetComponent<ThirdPersonMovement>().HasPowerUp; // This can be improved
 
@@ -67,4 +77,30 @@ public class GhostNavAgent : MonoBehaviour
             goPlayer = playerTransform.gameObject;
         }
     }
+
+    public void Kill()
+    {
+        if (PhotonNetwork.IsMasterClient == false) return;
+        
+        pv.RPC(nameof(KillRpc), RpcTarget.All);
+    }
+
+    [PunRPC]
+    void KillRpc()
+    {
+        isDeath = true;
+        if (PhotonNetwork.IsMasterClient)
+        {
+            transform.position = startPosition;
+        }
+        Invoke(nameof(Revive), kTimeOfDeath);
+    }
+
+    void Revive()
+    {
+        isDeath = false;
+    }
+    
+    
+    
 }
