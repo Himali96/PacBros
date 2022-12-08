@@ -18,9 +18,8 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
 
     [SerializeField] TextMeshProUGUI finalScoreTxt = null;
     [SerializeField] GameObject gameOverPopup;
-
-    [System.NonSerialized] public Dictionary<int, Transform> playersTransform = new Dictionary<int, Transform>();
-    [System.NonSerialized] public Dictionary<int, int> playerFoodEaten = new Dictionary<int, int>();
+    
+    public Dictionary<int, PlayerData> playersData = new Dictionary<int, PlayerData>(2);
     int nextIdPlayerToFollow = -1;
 
     public static GameManager _instance;
@@ -57,11 +56,14 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
 
     public void PlayeEatFood(PhotonView playerPv)
     {
-        playerFoodEaten[playerPv.OwnerActorNr]++;
+        playersData[playerPv.OwnerActorNr].food++;
     }
 
     public void PlayerDie(PhotonView playerPv)
     {
+        playersData[playerPv.OwnerActorNr].isAlive = false;
+        
+        // Just debug data
         if (playerPv.AmOwner)
         {
             print("Other player wins");
@@ -70,6 +72,15 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
         {
             print("Local player wins");
         }
+        
+        // Check if all players are death
+        foreach (var pData in playersData)
+        {
+            if (pData.Value.isAlive)
+                return;
+        }
+
+        // After this point, all players are death ---
 
         Time.timeScale = 0f;
         gameOverPopup.SetActive(true);
@@ -77,20 +88,25 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
 
     public Transform GetPlayerToFollow()
     {
-        if (playersTransform.Count == 0)
+        if (playersData.Count == 0)
             return null;
 
         nextIdPlayerToFollow++;
-        if (nextIdPlayerToFollow >= playersTransform.Count)
+        if (nextIdPlayerToFollow >= playersData.Count)
             nextIdPlayerToFollow = 0;
 
-        return playersTransform.ElementAt(nextIdPlayerToFollow).Value;
+        return playersData.ElementAt(nextIdPlayerToFollow).Value.transform;
     }
 
     public void NewPlayerConnected(PhotonView pv)
     {
-        playersTransform.Add(pv.OwnerActorNr, pv.transform);
-        playerFoodEaten.Add(pv.OwnerActorNr, 0);
+        PlayerData pData = new PlayerData
+        {
+            transform = pv.transform,
+            food = 0,
+            isAlive = true
+        };
+        playersData.Add(pv.OwnerActorNr, pData);
         OnPlayerListChange?.Invoke();
     }
 
@@ -100,10 +116,9 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
 
     public void OnPlayerLeftRoom(Player otherPlayer)
     {
-        if (playersTransform.ContainsKey(otherPlayer.ActorNumber))
+        if (playersData.ContainsKey(otherPlayer.ActorNumber))
         {
-            playersTransform.Remove(otherPlayer.ActorNumber);
-            playerFoodEaten.Remove(otherPlayer.ActorNumber);
+            playersData.Remove(otherPlayer.ActorNumber);
             OnPlayerListChange?.Invoke();
         }
     }
@@ -136,4 +151,12 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
 
         return 0;
     }*/
+
+    public class PlayerData
+    {
+        public Transform transform;
+        public int food;
+        public bool isAlive;
+    }
+    
 }

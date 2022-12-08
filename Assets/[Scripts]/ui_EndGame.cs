@@ -9,17 +9,17 @@ public class ui_EndGame : MonoBehaviour
 
     void Start()
     {
-        var playerScoresDic = GameManager._instance.playerFoodEaten;
+        var playersDataDic = GameManager._instance.playersData;
 
-        foreach (var playerScore in playerScoresDic)
+        foreach (var pData in playersDataDic)
         {
-            if (playerScore.Key == PhotonNetwork.LocalPlayer.ActorNumber)
+            if (pData.Key == PhotonNetwork.LocalPlayer.ActorNumber)
             {
-                localScoreTxt.SetText($"You score: {playerScore.Value}");
+                localScoreTxt.SetText($"You score: {pData.Value.food}");
             }
             else
             {
-                otherScoreTxt.SetText($"Other player score: {playerScore.Value}");
+                otherScoreTxt.SetText($"Other player score: {pData.Value.food}");
             }
         }
     }
