@@ -66,11 +66,11 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
         // Just debug data
         if (playerPv.AmOwner)
         {
-            print("Other player wins");
+            print("You die");
         }
         else
         {
-            print("Local player wins");
+            print("The other player dies");
         }
         
         // Check if all players are death
@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
 
         // After this point, all players are death ---
 
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
         gameOverPopup.SetActive(true);
     }
 

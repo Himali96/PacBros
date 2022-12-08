@@ -1,12 +1,12 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
 
-public class Menu : MonoBehaviour
+public class Menu : MonoBehaviourPunCallbacks
 {
+
     public void playGame()
     {
         SceneManager.LoadScene(1);
@@ -14,7 +14,14 @@ public class Menu : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene(0);
+        if (PhotonNetwork.InRoom)
+        {
+            PhotonNetwork.LeaveRoom();
+        }
+        else
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
     public void quitGame()
@@ -22,5 +29,9 @@ public class Menu : MonoBehaviour
         Application.Quit();
     }
 
-   
+    public override void OnLeftRoom()
+    {
+        base.OnLeftRoom();
+        SceneManager.LoadScene(0);
+    }
 }

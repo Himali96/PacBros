@@ -38,8 +38,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         }
         else
         {
-            Debug.Log("We are connected already.");
-            OnJoinedLobby();
+            PhotonNetwork.JoinLobby(TypedLobby.Default);
+            //OnJoinedLobby();
         }
     }
 
@@ -116,18 +116,13 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         PhotonNetwork.AutomaticallySyncScene = true;
-        PhotonNetwork.NickName = $"PacBro-{Random.Range(1, 100000)}";
+        if (string.IsNullOrEmpty(PhotonNetwork.NickName))
+        {
+            PhotonNetwork.NickName = $"PacBro-{Random.Range(1, 100000)}";   
+        }
         roomCreateInput.text = $"Room-{PhotonNetwork.NickName}";
 
         PhotonNetwork.JoinLobby(TypedLobby.Default);
-    }
-
-    private void OnPhotonCreateRoomFailed(object[] codeAndMessage)
-    {
-        print("Create Room Failed: " + codeAndMessage[1]);
-        roomCreateBtn.interactable = true;
-        jointFastBtn.interactable = true;
-        waitingRoomGo.SetActive(false);
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
