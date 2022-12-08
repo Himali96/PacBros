@@ -27,12 +27,16 @@ public class GhostNavAgent : MonoBehaviour
         spawnPoint = GameObject.FindGameObjectWithTag("EnemySpawnPoint");
 
         GameManager._instance.OnPlayerListChange += OnPlayerListChange;
+        GameManager._instance.OnGameFinish += OnGameFinish;
     }
 
     void OnDestroy()
     {
         if(GameManager._instance)
+        {
             GameManager._instance.OnPlayerListChange -= OnPlayerListChange;
+            GameManager._instance.OnGameFinish -= OnGameFinish;
+        }
     }
 
     // Update is called once per frame
@@ -100,7 +104,11 @@ public class GhostNavAgent : MonoBehaviour
     {
         isDeath = false;
     }
-    
-    
+
+    void OnGameFinish()
+    {
+        agent.speed = 0f;
+        agent.isStopped = true;
+    }
     
 }

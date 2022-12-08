@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,7 +22,18 @@ public class ThirdPersonMovement : MonoBehaviour
 
   //  public bool HasPowerUp { get; internal set; }
 
-    public void Teleport(Vector3 position, Quaternion rotation)
+  void Start()
+  {
+      GameManager._instance.OnGameFinish += OnGameFinish;
+  }
+
+  void OnDestroy()
+  {
+      if(GameManager._instance)
+          GameManager._instance.OnGameFinish -= OnGameFinish;
+  }
+
+  public void Teleport(Vector3 position, Quaternion rotation)
     {
         transform.position = position;
         Physics.SyncTransforms();
@@ -90,6 +102,11 @@ public class ThirdPersonMovement : MonoBehaviour
             PhotonNetwork.Destroy(other.gameObject);
             OnPickPowerUp(4f);
         }
+    }
+
+    void OnGameFinish()
+    {
+        this.enabled = false;
     }
 
     

@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
 {
     public Action OnPlayerListChange;
 
+    public Action OnGameFinish;
+
     [SerializeField] Text foodItemTxt = null;
     [SerializeField] int foodItems;
 
@@ -80,10 +82,15 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
                 return;
         }
 
-        // After this point, all players are death ---
+        DisplayGameOver();
+    }
 
-        Time.timeScale = 1f;
+    public void DisplayGameOver()
+    {
+        if (gameOverPopup.activeSelf) return;
+        
         gameOverPopup.SetActive(true);
+        OnGameFinish?.Invoke();
     }
 
     public Transform GetPlayerToFollow()
