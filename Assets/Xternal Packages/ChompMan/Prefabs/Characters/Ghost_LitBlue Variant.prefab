@@ -11,13 +11,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost_LitBlue Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cd46c4c845d21ed4690627267f2edc5d, type: 3}
+      propertyPath: m_TagString
+      value: Ghost
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd46c4c845d21ed4690627267f2edc5d, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd46c4c845d21ed4690627267f2edc5d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.44
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd46c4c845d21ed4690627267f2edc5d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -25,23 +29,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd46c4c845d21ed4690627267f2edc5d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.51
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd46c4c845d21ed4690627267f2edc5d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9615973
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd46c4c845d21ed4690627267f2edc5d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd46c4c845d21ed4690627267f2edc5d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.27446452
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd46c4c845d21ed4690627267f2edc5d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd46c4c845d21ed4690627267f2edc5d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -49,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd46c4c845d21ed4690627267f2edc5d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -31.86
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd46c4c845d21ed4690627267f2edc5d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -122,6 +126,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
   agent: {fileID: 4261852928425950781}
+  CloseEnoughDistance: 5
+  isChasingOn: 1
+  normalMat: {fileID: 2100000, guid: 26bcbe1ab7bf213448c16169f6208712, type: 2}
+  evadeMat: {fileID: 2100000, guid: c31e5fac1beb02f4e8774fb2e51e87a3, type: 2}
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentWaypointIndex: 0
 --- !u!195 &4261852928425950781
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -131,8 +153,8 @@ NavMeshAgent:
   m_GameObject: {fileID: 6706788707963437449}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.41859728
-  m_Speed: 3.5
+  m_Radius: 0.1
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -143,4 +165,43 @@ NavMeshAgent:
   m_Height: 1
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
+--- !u!114 &6706788708426513960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6706788707963437449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 6706788708426513961}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &6706788708426513961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6706788707963437449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1

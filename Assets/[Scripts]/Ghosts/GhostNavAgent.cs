@@ -19,6 +19,16 @@ public class GhostNavAgent : MonoBehaviour
 
     PhotonView pv;
 
+    public bool isChasingOn = true;
+
+    public Material normalMat;
+    public Material evadeMat;
+
+    public Transform[] waypoints;
+
+    [SerializeField]
+    private int currentWaypointIndex = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +38,8 @@ public class GhostNavAgent : MonoBehaviour
 
         GameManager._instance.OnPlayerListChange += OnPlayerListChange;
         GameManager._instance.OnGameFinish += OnGameFinish;
+
+        currentWaypointIndex = Random.Range(0, waypoints.Length);
     }
 
     void OnDestroy()
@@ -48,14 +60,42 @@ public class GhostNavAgent : MonoBehaviour
         
         playerPowerUp = goPlayer.GetComponent<ThirdPersonMovement>().HasPowerUp; // This can be improved
 
-        if (playerPowerUp && Vector3.Distance(transform.position, playerTransform.position) <= CloseEnoughDistance)
+        if(playerPowerUp)
+        {
+            if(Vector3.Distance(transform.position, playerTransform.position) <= CloseEnoughDistance)
+            {
+                agent.destination = spawnPoint.transform.position;
+            }
+
+            GetComponent<SkinnedMeshRenderer>().material = evadeMat;
+        }
+        else
+        {
+            if(isChasingOn)
+                agent.destination = playerTransform.position;
+            else
+            {
+                if(Vector3.Distance(transform.position, waypoints[currentWaypointIndex].position) > 1f)
+                {
+                    agent.destination = waypoints[currentWaypointIndex].position;
+                }
+                else
+                {
+                    currentWaypointIndex = Random.Range(0, waypoints.Length);
+                }
+            }
+
+            GetComponent<SkinnedMeshRenderer>().material = normalMat;
+        }
+
+        /*if (playerPowerUp && Vector3.Distance(transform.position, playerTransform.position) <= CloseEnoughDistance)
         {
             agent.destination = spawnPoint.transform.position;
         }
         else
         {
             agent.destination = playerTransform.position;
-        }
+        }*/
     }
 
     private void OnTriggerEnter(Collider other)
