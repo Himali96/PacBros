@@ -14,7 +14,7 @@ public class FoodPicker : MonoBehaviour
     void OnDestroy()
     {
         foodRemaining--;
-        if(GameManager._instance)
+        if(foodRemaining == 0 && GameManager._instance)
             GameManager._instance.DisplayGameOver();
     }
 

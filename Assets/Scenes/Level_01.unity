@@ -9577,6 +9577,14 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: -6044173646473748513, guid: 60c2480153d4da841ab193c749b9e87c, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6044173646473748513, guid: 60c2480153d4da841ab193c749b9e87c, type: 3}
+      propertyPath: m_ObstacleAvoidanceType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -2918360302158951732, guid: 60c2480153d4da841ab193c749b9e87c, type: 3}
       propertyPath: playerTransform
       value: 
@@ -25435,11 +25443,19 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1761698037790283355, guid: f4c0092c8046f484a80394f3f076d9d7, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761698037790283355, guid: f4c0092c8046f484a80394f3f076d9d7, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1761698037790283355, guid: f4c0092c8046f484a80394f3f076d9d7, type: 3}
       propertyPath: m_BaseOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761698037790283355, guid: f4c0092c8046f484a80394f3f076d9d7, type: 3}
+      propertyPath: m_ObstacleAvoidanceType
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -25675,6 +25691,14 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4261852928425950781, guid: 41f5bb0172a94a4459eee9900b6bf02c, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4261852928425950781, guid: 41f5bb0172a94a4459eee9900b6bf02c, type: 3}
+      propertyPath: m_ObstacleAvoidanceType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6706788707963437449, guid: 41f5bb0172a94a4459eee9900b6bf02c, type: 3}
       propertyPath: m_Name
       value: Ghost_LitBlue
@@ -25783,6 +25807,14 @@ PrefabInstance:
     - target: {fileID: -3947031178965253074, guid: bbf054d6e436c51468be981115a84991, type: 3}
       propertyPath: m_Speed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -3947031178965253074, guid: bbf054d6e436c51468be981115a84991, type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3947031178965253074, guid: bbf054d6e436c51468be981115a84991, type: 3}
+      propertyPath: m_ObstacleAvoidanceType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3586683522879881825, guid: bbf054d6e436c51468be981115a84991, type: 3}
       propertyPath: playerTransform
