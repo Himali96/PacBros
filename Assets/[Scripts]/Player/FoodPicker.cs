@@ -25,16 +25,17 @@ public class FoodPicker : MonoBehaviour
             PhotonView playerPv = other.GetComponent<PhotonView>();
             GameManager._instance.PlayFoodParticle(transform.position);
 
-            // Increase +1 to score if is local player
-            if(playerPv.AmOwner)
-                GameManager._instance.Food++;
-
             // Send score of that player
             GameManager._instance.PlayeEatFood(playerPv);
 
             if (PhotonNetwork.IsMasterClient)
             {
                 PhotonNetwork.Destroy(gameObject);
+            }
+            else
+            {
+                GetComponent<MeshRenderer>().enabled = false;
+                GetComponent<BoxCollider>().enabled = false;
             }
         }
     }

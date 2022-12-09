@@ -9,13 +9,16 @@ using Photon.Realtime;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour, IInRoomCallbacks
+public class GameManager : MonoBehaviourPunCallbacks
 {
     public Action OnPlayerListChange;
 
     public Action OnGameFinish;
 
     PhotonView pv;
+    
+    public bool HasPowerUp = false;
+    public float powerUpTimer;
 
     [SerializeField] Text foodItemTxt = null;
     [SerializeField] int foodItems;
@@ -38,32 +41,38 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
             _instance = this;
     }
 
-    public int Food // This is local player score
+    void Update()
     {
-        get
+        // Check timer only when Power up time
+        if (HasPowerUp)
         {
-            return foodItems;
-        }
+            // Countdown the timer with update time
+            powerUpTimer -= Time.deltaTime;
+            //Debug.Log("PowerUp");
 
-        set
-        {
-            foodItems = value;
-            if (foodItems < 0)
-                foodItems = 0;
-            /*
-            if (foodItems >= 150) //only for 1 player
+            if (powerUpTimer <= 0)
             {
-                gameOverPopup.SetActive(true);
-                finalScoreTxt.text = "Your Final Score: " + foodItems.ToString();
+                // End of power up time 
+                HasPowerUp = false;
+                powerUpTimer = 0;
+                //Debug.Log("PowerDown");
             }
-            */
-            foodItemTxt.text = "Score: " + foodItems.ToString();
         }
     }
 
     public void PlayeEatFood(PhotonView playerPv)
     {
+        if (PhotonNetwork.IsMasterClient == false) return;
+        
         playersData[playerPv.OwnerActorNr].food++;
+        SyncPlayerScore(playerPv.Owner, playersData[playerPv.OwnerActorNr].food);
+    }
+    
+    // Add any time player picks to timer
+    public void OnPickPowerUp(float buffTime)
+    {
+        HasPowerUp = true;
+        powerUpTimer = buffTime;
     }
 
     public void PlayerDie(PhotonView playerPv)
@@ -134,11 +143,7 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
         OnPlayerListChange?.Invoke();
     }
 
-    public void OnPlayerEnteredRoom(Player newPlayer)
-    {
-    }
-
-    public void OnPlayerLeftRoom(Player otherPlayer)
+    public override void OnPlayerLeftRoom(Player otherPlayer)
     {
         if (playersData.ContainsKey(otherPlayer.ActorNumber))
         {
@@ -147,25 +152,35 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
         }
     }
 
-    public void OnRoomPropertiesUpdate(ExitGames.Client.Photon.Hashtable propertiesThatChanged)
+    public override void OnRoomPropertiesUpdate(Hashtable propertiesThatChanged)
     {
     }
 
-    public void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable changedProps)
+    public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)
     {
+        if(targetPlayer.IsLocal == false) return;
+        
+        foodItemTxt.text = "Score: " + changedProps["score"].ToString();
     }
 
-    public void OnMasterClientSwitched(Player newMasterClient)
-    {
-    }
-    
-    /*void SyncLocalScore(int newScore)
+    void SyncPlayerScore(Player player ,int newScore)
     {
         Hashtable score = new Hashtable();
         score["score"] = newScore;
-        PhotonNetwork.LocalPlayer.SetCustomProperties(score);
+        player.SetCustomProperties(score);
     }
-    
+
+    public int GetLocalScore()
+    {
+        return GetScoreOfPlayer(PhotonNetwork.LocalPlayer);
+    }
+
+    public int GetOtherScore()
+    {
+        var otherPlayers = PhotonNetwork.PlayerListOthers;
+        return otherPlayers.Length == 0 ? 0 : GetScoreOfPlayer(otherPlayers[0]);
+    }
+
     int GetScoreOfPlayer(Player player)
     {
         if (player.CustomProperties.TryGetValue("score", out object score))
@@ -174,7 +189,7 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
         }
 
         return 0;
-    }*/
+    }
 
     public class PlayerData
     {
@@ -182,5 +197,4 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
         public int food;
         public bool isAlive;
     }
-    
 }

@@ -1,15 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class GhostNavAgent : MonoBehaviour
+public class GhostNavAgent : MonoBehaviour, IPunObservable
 {
     const float kTimeOfDeath = 5f;
     
     public Transform playerTransform;
     public NavMeshAgent agent;
+    SkinnedMeshRenderer skinnedMeshRenderer;
     GameObject goPlayer,spawnPoint;
     bool playerPowerUp;
     public float CloseEnoughDistance = 5f;
@@ -23,16 +22,18 @@ public class GhostNavAgent : MonoBehaviour
 
     public Material normalMat;
     public Material evadeMat;
+    bool useNormalMat = true;
 
     public Transform[] waypoints;
 
     [SerializeField]
-    private int currentWaypointIndex = 0;
+    private int currentWaypointIndex;
 
     // Start is called before the first frame update
     void Start()
     {
         pv = GetComponent<PhotonView>();
+        skinnedMeshRenderer = GetComponent<SkinnedMeshRenderer>();
         startPosition = transform.position;
         spawnPoint = GameObject.FindGameObjectWithTag("EnemySpawnPoint");
 
@@ -55,11 +56,18 @@ public class GhostNavAgent : MonoBehaviour
     void Update()
     {
         if (!PhotonNetwork.IsMasterClient) return;
-        if (playerTransform == null) return;
         if (isDeath) return;
-        
-        playerPowerUp = goPlayer.GetComponent<ThirdPersonMovement>().HasPowerUp; // This can be improved
 
+        // The player is dead or disconnected, ask for the next player
+        if (playerTransform == null)
+        {
+            OnPlayerListChange();
+            if (playerTransform == null)
+                return;
+        }
+
+        playerPowerUp = GameManager._instance.HasPowerUp;
+        
         if(playerPowerUp)
         {
             if(Vector3.Distance(transform.position, playerTransform.position) <= CloseEnoughDistance)
@@ -67,7 +75,8 @@ public class GhostNavAgent : MonoBehaviour
                 agent.destination = spawnPoint.transform.position;
             }
 
-            GetComponent<SkinnedMeshRenderer>().material = evadeMat;
+            skinnedMeshRenderer.material = evadeMat;
+            useNormalMat = false;
         }
         else
         {
@@ -85,7 +94,8 @@ public class GhostNavAgent : MonoBehaviour
                 }
             }
 
-            GetComponent<SkinnedMeshRenderer>().material = normalMat;
+            skinnedMeshRenderer.material = normalMat;
+            useNormalMat = true;
         }
 
         /*if (playerPowerUp && Vector3.Distance(transform.position, playerTransform.position) <= CloseEnoughDistance)
@@ -100,16 +110,20 @@ public class GhostNavAgent : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (PhotonNetwork.IsMasterClient == false) return;
+        
         if(other.gameObject.CompareTag("Player") && playerPowerUp == false)
         {
             PhotonView otherPv = other.GetComponent<PhotonView>();
             GameManager._instance.PlayerDie(otherPv);
-
-            if (otherPv.AmOwner) // Only the controller of player can kill it
-            {
-                PhotonNetwork.Destroy(other.gameObject);
-            }
+            pv.RPC(nameof(DestroyRpc), otherPv.Owner, otherPv.ViewID);
         }
+    }
+
+    [PunRPC]
+    void DestroyRpc(int _pvId)
+    {
+        PhotonNetwork.Destroy(PhotonView.Find(_pvId).gameObject);
     }
 
     void OnPlayerListChange()
@@ -150,5 +164,22 @@ public class GhostNavAgent : MonoBehaviour
         agent.speed = 0f;
         agent.isStopped = true;
     }
-    
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            stream.SendNext(useNormalMat);
+        }
+        else
+        {
+            bool newUseNormalMat = (bool) stream.ReceiveNext();
+
+            if (newUseNormalMat != useNormalMat)
+            {
+                useNormalMat = newUseNormalMat;
+                skinnedMeshRenderer.material = newUseNormalMat ? normalMat : evadeMat;
+            }
+        }
+    }
 }

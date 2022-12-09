@@ -1,4 +1,3 @@
-using Photon.Pun;
 using UnityEngine;
 using TMPro;
 
@@ -9,18 +8,7 @@ public class ui_EndGame : MonoBehaviour
 
     void Start()
     {
-        var playersDataDic = GameManager._instance.playersData;
-
-        foreach (var pData in playersDataDic)
-        {
-            if (pData.Key == PhotonNetwork.LocalPlayer.ActorNumber)
-            {
-                localScoreTxt.SetText($"You score: {pData.Value.food}");
-            }
-            else
-            {
-                otherScoreTxt.SetText($"Other player score: {pData.Value.food}");
-            }
-        }
+        localScoreTxt.SetText($"You score: {GameManager._instance.GetLocalScore()}");
+        otherScoreTxt.SetText($"Other player score: {GameManager._instance.GetOtherScore()}");
     }
 }

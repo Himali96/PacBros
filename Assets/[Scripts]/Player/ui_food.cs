@@ -17,6 +17,6 @@ public class ui_food : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = $"Score: {GameManager._instance.Food}";
+        text.text = $"Score: {GameManager._instance.GetLocalScore()}";
     }
 }
