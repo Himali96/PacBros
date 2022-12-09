@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
 
     public Action OnGameFinish;
 
+    PhotonView pv;
+
     [SerializeField] Text foodItemTxt = null;
     [SerializeField] int foodItems;
 
@@ -24,10 +26,13 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
     public Dictionary<int, PlayerData> playersData = new Dictionary<int, PlayerData>(2);
     int nextIdPlayerToFollow = -1;
 
+    public ParticleSystem foodParticle;
+
     public static GameManager _instance;
 
     private void Awake()
     {
+        pv = GetComponent<PhotonView>();
         Time.timeScale = 1f;
         if (_instance == null) 
             _instance = this;
@@ -87,6 +92,12 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
 
     public void DisplayGameOver()
     {
+        pv.RPC(nameof(DisplayGameOverRpc), RpcTarget.All);
+    }
+
+    [PunRPC]
+    void DisplayGameOverRpc()
+    {
         if (gameOverPopup.activeSelf) return;
         
         gameOverPopup.SetActive(true);
@@ -103,6 +114,12 @@ public class GameManager : MonoBehaviour, IInRoomCallbacks
             nextIdPlayerToFollow = 0;
 
         return playersData.ElementAt(nextIdPlayerToFollow).Value.transform;
+    }
+
+    public void PlayFoodParticle(Vector3 _pos)
+    {
+        foodParticle.transform.position = _pos;
+        foodParticle.Emit(30);
     }
 
     public void NewPlayerConnected(PhotonView pv)
