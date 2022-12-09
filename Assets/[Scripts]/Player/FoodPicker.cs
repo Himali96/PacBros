@@ -23,6 +23,7 @@ public class FoodPicker : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             PhotonView playerPv = other.GetComponent<PhotonView>();
+            GameManager._instance.PlayFoodParticle(transform.position);
 
             // Increase +1 to score if is local player
             if(playerPv.AmOwner)
