@@ -7,6 +7,23 @@ using Photon.Pun;
 public class Menu : MonoBehaviourPunCallbacks
 {
 
+    public GameObject creditPanel;
+
+    public void Start()
+    {
+        creditPanel.SetActive(false);
+    }
+
+    public void OnCreditClick()
+    {
+        creditPanel.SetActive(true);
+    }
+
+    public void OnCreditExitClick()
+    {
+        creditPanel.SetActive(false);
+    }
+
     public void playGame()
     {
         SceneManager.LoadScene(1);
