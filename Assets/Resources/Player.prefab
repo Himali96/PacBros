@@ -156,6 +156,8 @@ MonoBehaviour:
   speed: 4
   turnSmoothTime: 0.1
   _gameObject: {fileID: 4745919542885641625, guid: ffa7953b50f0cca4a8fa59c8d956a318, type: 3}
+  arrow: {fileID: 1971697922560875603}
+  arrowSpeed: 1
   pv: {fileID: 5185499022384929029}
 --- !u!114 &502468785395806297
 MonoBehaviour:
@@ -217,25 +219,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7737786565078102000}
     m_Modifications:
-    - target: {fileID: 1164090342442655348, guid: d33249e5ae722fb40ad2807c439696d9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7220977421686351351, guid: d33249e5ae722fb40ad2807c439696d9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7308235905141624704, guid: d33249e5ae722fb40ad2807c439696d9, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 7308235905141624706, guid: d33249e5ae722fb40ad2807c439696d9, type: 3}
       propertyPath: m_Name
       value: Chomp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7308235905141624706, guid: d33249e5ae722fb40ad2807c439696d9, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7308235905142051746, guid: d33249e5ae722fb40ad2807c439696d9, type: 3}
       propertyPath: m_RootOrder
@@ -286,5 +272,10 @@ PrefabInstance:
 --- !u!4 &1012802181377498205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7308235905142051746, guid: d33249e5ae722fb40ad2807c439696d9, type: 3}
+  m_PrefabInstance: {fileID: 7737786563546861567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1971697922560875603 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8088116602108482476, guid: d33249e5ae722fb40ad2807c439696d9, type: 3}
   m_PrefabInstance: {fileID: 7737786563546861567}
   m_PrefabAsset: {fileID: 0}

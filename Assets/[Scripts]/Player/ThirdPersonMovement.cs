@@ -13,6 +13,9 @@ public class ThirdPersonMovement : MonoBehaviour
     float turnSmoothvelocity;
     public GameObject _gameObject;
 
+    public GameObject arrow;
+    public float arrowSpeed;
+
     [SerializeField]
     PhotonView pv;
 
@@ -21,6 +24,8 @@ public class ThirdPersonMovement : MonoBehaviour
   void Start()
   {
       GameManager._instance.OnGameFinish += OnGameFinish;
+
+        arrow.SetActive(false);
   }
 
   void OnDestroy()
@@ -52,6 +57,8 @@ public class ThirdPersonMovement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
+
+        //arrow.transform.position = new Vector3(arrow.transform.position.x, MathF.Sin(Time.deltaTime), arrow.transform.position.z);
     }
 
     void OnTriggerEnter(Collider other)
@@ -82,5 +89,8 @@ public class ThirdPersonMovement : MonoBehaviour
         this.enabled = false;
     }
 
-    
+    public void ShowArrow()
+    {
+        arrow.SetActive(true);
+    }
 }

@@ -141,6 +141,8 @@ public class GameManager : MonoBehaviourPunCallbacks
         };
         playersData.Add(pv.OwnerActorNr, pData);
         OnPlayerListChange?.Invoke();
+
+
     }
 
     public override void OnPlayerLeftRoom(Player otherPlayer)

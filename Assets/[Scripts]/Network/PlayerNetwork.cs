@@ -26,6 +26,7 @@ public class PlayerNetwork : MonoBehaviourPun
             camCinemachine.LookAt = transform;
 
             GetComponent<ThirdPersonMovement>().cam = Camera.main.transform;
+            GetComponent<ThirdPersonMovement>().ShowArrow();
         }
         else
         {

@@ -70,10 +70,7 @@ public class GhostNavAgent : MonoBehaviour, IPunObservable
         
         if(playerPowerUp)
         {
-            if(Vector3.Distance(transform.position, playerTransform.position) <= CloseEnoughDistance)
-            {
-                agent.destination = spawnPoint.transform.position;
-            }
+            agent.destination = spawnPoint.transform.position;
 
             skinnedMeshRenderer.material = evadeMat;
             useNormalMat = false;
