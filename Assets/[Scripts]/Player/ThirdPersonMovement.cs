@@ -19,6 +19,9 @@ public class ThirdPersonMovement : MonoBehaviour
     [SerializeField]
     PhotonView pv;
 
+    public Material selfMaterial;
+    public SkinnedMeshRenderer playerMesh;
+
   //  public bool HasPowerUp { get; internal set; }
 
   void Start()
@@ -92,5 +95,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public void ShowArrow()
     {
         arrow.SetActive(true);
+
+        playerMesh.material = selfMaterial;
     }
 }
